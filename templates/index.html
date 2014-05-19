@@ -5,9 +5,12 @@
 
 	<div style="align:center; width:50%; padding-left:10px;">
 		<div class="page-header">
-			<h2>{% if result %}{{ result }}{% endif %}</h2>
+		{% if result %}
+			<h2>{{ result }}</h2>
 			<a href="{{ url_for('index') }}">Reset</a>
+		{% endif %}
 		</div>
 		{{ wtf.quick_form(form) }}
 	</div>
+
 {% endblock %}
