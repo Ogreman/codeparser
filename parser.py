@@ -1,9 +1,3 @@
-# Consider me solving this for you your birthday present ;)
-# Erika x
-
-# Initial variables
-jakew = 'Jake Whiteman'
-supermysteriouscode = '^>>>>>>.>>>>>.]]]<..[<<<<<-.[[<.^]<<<.[!>>>>.[[<.]].>>.<<<[.<<].!>>>>]]-.\,[[<./.>.>.>.\!\!\!'
 
 
 class Parser(object):
@@ -81,4 +75,6 @@ class Parser(object):
 
 
 if __name__ == '__main__':
+        jakew = 'Jake Whiteman'
+        supermysteriouscode = '^>>>>>>.>>>>>.]]]<..[<<<<<-.[[<.^]<<<.[!>>>>.[[<.]].>>.<<<[.<<].!>>>>]]-.\,[[<./.>.>.>.\!\!\!'
         print(Parser(supermysteriouscode, jakew).run())
