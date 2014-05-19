@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block title %}Parser{% endblock %}
+{% block content %}
+
+	<div style="align:center; width:50%; padding-left:10px;">
+		<div class="page-header">
+			<h2>{% if result %}{{ result }}{% endif %}</h2>
+			<a href="{{ url_for('index') }}">Reset</a>
+		</div>
+		{{ wtf.quick_form(form) }}
+	</div>
+{% endblock %}
