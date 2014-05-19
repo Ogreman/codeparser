@@ -1,9 +1,26 @@
 {% extends "bootstrap/base.html" %}
 {% block title %}Parser{% endblock %}
 
-{% block navbar %}
+{% block styles %}
+	{{ super() }}
+	<style>
+		#github {
+			position: fixed;
+			bottom: 5px;
+			right: 5px;
+		}
+	</style>
+{% endblock %}
 
+{% block navbar %}
 {% endblock %}
 
 {% block content %}
+{% endblock %}
+
+{% block html %}
+{{ super() }}
+	<a href="https://github.com/Ogreman/codeparser">
+		<img id="github" src="{{ url_for('static', filename='GitHub-Mark-32px.png') }}" />
+	</a>
 {% endblock %}
